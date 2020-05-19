@@ -34,34 +34,48 @@ body, a:link, a:visited, a:active{
 
 
 .dancer{
-  /* border: 5px solid greenyellow; */
-  border-radius: 10px;
+  border: 1px solid greenyellow;
+  border-radius: 30px;
   position: absolute;
   width: 30px;
   height: 30px;
-  background-color: white;
+  /* background-color: greenyellow; */
 
 };
 
 
-.dancer1 {
- background-color: red;
- width: 40px;
- height: 40px;
- content: url('asset/music.jpeg');
-
-
-
-}
-
-.spin {
+.expand {
+  border: none;
   width: 100px;
   height: 100px;
-  background-color: #00aced;
-  content: url('asset/music.jpeg');
-  /* border-radius: 50%; */
+  background-color: red;
+  /* animation-name: change;
+  animation-duration: 4s; */
+  background-image: url('asset/jenny.png');
+}
+
+/* @keyframes change {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+} */
+
+
+
+.spin {
+  border: none;
+  border-radius: none;
+  width: 200px;
+  height: 200px;
+  /* background-color: 'yellow' */
+  background-image: url('asset/jenny.png');
+  /* background-image: url('asset/jenny.png'/100/100); */
+  content: url('asset/jenny.png');
+
+  /* /* border-radius: 50%; */
   animation-name: spin;
-  animation-duration: 5000ms;
+  animation-duration: 2000ms;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   /* transform: rotate(3deg); */

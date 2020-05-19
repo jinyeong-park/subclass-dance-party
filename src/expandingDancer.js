@@ -1,28 +1,41 @@
 
-var dancer1 = function(top, left, timeBetweenSteps) {
+var expandingDancer = function(top, left, timeBetweenSteps) {
+
 
   makeDancer.call(this, top, left, timeBetweenSteps);
-  this.$node.addClass('dancer1');
+  this.$node.addClass('expand');
   this.expand();
+
 };
 
 
-dancer1.prototype = Object.create(makeDancer.prototype);
-dancer1.prototype.constructor = dancer1;
+expandingDancer.prototype = Object.create(makeDancer.prototype);
+expandingDancer.prototype.constructor = expandingDancer;
 
 
-dancer1.prototype.expand = function () {
+expandingDancer.prototype.step = function () {
+  makeDancer.prototype.step.call(this);
+};
+
+
+expandingDancer.prototype.expand = function () {
   this.$node.animate ({
-    width: '40px',
-    height: '40px',
-  }, 200);
 
+    width: '150px',
+    height: '150px',
+    // border: '1px solid red',
+
+
+
+  }, 500);
 };
 
 
+// var spinDancer = function (top, left, timeBetweenSteps) {
 
+//   makeDancer.call(this, top, left, timeBetweenSteps);
 
-
+// };
 
 
 // we plan to overwrite the step function below, but we still want the superclass step behavior to work,
