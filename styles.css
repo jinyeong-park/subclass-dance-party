@@ -6,22 +6,75 @@ body{
   background-color:#444;
   font-size: 18px;
 }
+
+.container{
+  height:100%;
+  color: #333;
+  width: 100%;
+  background-image: url('asset/background1.jpeg');
+  background-size: contain;
+  opacity: .5;
+}
+
 body, a:link, a:visited, a:active{
   color: lightblue;
 }
 .title, .addDancerButton{
-  padding:5px 12px;
+  padding:5px 30px;
   float:right;
 }
 .topbar{
   height:32px;
   background-color: #555;
+  text-align: center;
 }
 .title{
   background-color: #777;
 }
+
+
 .dancer{
-  border:10px solid red;
-  border-radius:10px;
-  position:absolute;
+  /* border: 5px solid greenyellow; */
+  border-radius: 10px;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+
+};
+
+
+.dancer1 {
+ background-color: red;
+ width: 40px;
+ height: 40px;
+ content: url('asset/music.jpeg');
+
+
+
+}
+
+.spin {
+  width: 100px;
+  height: 100px;
+  background-color: #00aced;
+  content: url('asset/music.jpeg');
+  /* border-radius: 50%; */
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  /* transform: rotate(3deg); */
+    /* transform: rotate(0.3rad);/ */
+    /* transform: rotate(3grad); */
+    /* transform: rotate(.03turn);  */
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
 }

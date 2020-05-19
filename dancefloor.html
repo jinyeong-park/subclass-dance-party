@@ -8,16 +8,25 @@
     <script src="src/blinkyDancer.js"></script> -->
   </head>
   <body>
+
     <div class="topbar">
+
       <span class="title">object dance party</span>
+      <!-- <button type="button" class="addDancerButton" onclick="lineUp()">Line Up</button> -->
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="lineUp" onclick="lineUp()">Horizontal Lineup</a>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="lineUpV" onclick="lineUpV()">Vertical Lineup</a>
       <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeBlinkyDancer">add a blinky dancer</a>
       <a href="#" class="addDancerButton" data-dancer-maker-function-name="dancer1">dancer1</a>
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="dancer2">dancer2</a>
-       </div>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="spinDancer">add spinning dancers</a>
+    </div>
+
     <script src="src/init.js"></script>
     <script src="src/dancer.js"></script>
     <script src="src/blinkyDancer.js"></script>
     <script src="src/dancer1.js"></script>
-    <script src="src/dancer2.js"></script>
+    <script src="src/spinDancer.js"></script>
+    <script src="src/lineUp.js"></script>
+    <script src="src/lineUpV.js"></script>
+    <div class="container">
   </body>
 </html>
