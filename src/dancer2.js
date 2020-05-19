@@ -21,4 +21,3 @@ makeBlinkyDancer.prototype.step = function() {
   this.$node.toggle();
   //console.log(this);
 };
-
